@@ -1,4 +1,5 @@
- // Initialize Firebase
+
+// Initialize Firebase
 var config = {
     apiKey: "AIzaSyCGfuEfihVh_aPEQM-IbekiVLu8-6aWv_8",
     authDomain: "spaceproject-63074.firebaseapp.com",
@@ -9,16 +10,30 @@ var config = {
   };
   firebase.initializeApp(config);
 
-  const database = firebase.database();
-
-  // variables needed
-
+  //variables
+  var name = "";
+  var email = "";
   
-  // on clikc event
-$("#changME").on("click", function(event) {
-    // alert is just for testing functionality 
-    alert("You clicked me")
+  //on click
+$("#submit").on("click", function (event) {
+    
+    alert("You are now Logged in.");
+    console.log(alert);
 
     event.preventDefault();
+
+    name = $("#uname").val().trim();
+    email = $("uemail").val().trim();
+
+    database.ref().push({
+        name: name,
+        email: email
+    });
+
+    console.log(database);
+
+    //clear those fields
+    $("#uname").val("");
+    $("#uemail").val("");
 });
 
