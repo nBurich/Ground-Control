@@ -10,30 +10,51 @@ var config = {
   };
   firebase.initializeApp(config);
 
+  var database = firebase.database();
+
   //variables
-  var name = "";
-  var email = "";
+  
   
   //on click
 $("#submit").on("click", function (event) {
     
-    alert("You are now Logged in.");
-    console.log(alert);
-
     event.preventDefault();
 
-    name = $("#uname").val().trim();
-    email = $("uemail").val().trim();
+    var name = $("#name-input").val().trim();
+    var email = $("#email-input").val().trim();
+    var favorite = $("#favorite-input").val().trim();
+    console.log(name);
+    console.log(email);
+    console.log(favorite);
+    
 
     database.ref().push({
         name: name,
-        email: email
+        email: email,
+        favorite: favorite,
     });
 
     console.log(database);
 
+
+
     //clear those fields
-    $("#uname").val("");
-    $("#uemail").val("");
+   
+   
+   
+   
+    $("#name-input").val("");
+    $("#email-input").val("");
+    $("#favorite-input").val("");
+});
+
+database.ref().on("child_added", function(snapshot){
+    var sv = snapshot.val();
+    var tr = `<tr>
+    <td>${sv.name}</td>
+    <td>${sv.favorite}</td>
+</tr>`
+$("#tableBody").append(tr);
+
 });
 
