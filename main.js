@@ -10,20 +10,21 @@ var config = {
   };
   firebase.initializeApp(config);
 
+  var database = firebase.database();
+
   //variables
-  var name = "";
-  var email = "";
+  
   
   //on click
 $("#submit").on("click", function (event) {
     
-    alert("You are now Logged in.");
-    console.log(alert);
-
     event.preventDefault();
 
-    name = $("#uname").val().trim();
-    email = $("uemail").val().trim();
+    var name = $("#name-input").val().trim();
+    var email = $("#email-input").val().trim();
+    console.log(name);
+    console.log(email);
+    
 
     database.ref().push({
         name: name,
@@ -32,8 +33,13 @@ $("#submit").on("click", function (event) {
 
     console.log(database);
 
+    database.ref().on("value", function(snapshot){
+        $("#name-input").text(snapshot.val().name);
+        $("#email-input").text(snapshot.val().email);
+      })
+
     //clear those fields
-    $("#uname").val("");
-    $("#uemail").val("");
+    $("#name-input").val("");
+    $("#email-input").val("");
 });
 
