@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ground Control</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -62,24 +62,32 @@
                 </blockquote>
             </div>
         </div>
+        <br>
         <!-- first row with synopsis of random subject and pic relating to that subject -->
         <div class="row">
             <!-- column 1 with title and synopsis -->
             <div class="col">
                 <div class="card" style="width: 100%;">
                     <div class="card-body">
-                        <h5 class="card-title">Random subject about space</h5>
-                        <p class="card-text" id="spaceSnippet">here we will have a title of random subject with brief synopsis of said subject</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h2>NASA Image of the Day!</h2>
+                        <br>
+                        <h5 id= "title" class="card-title"></h5>
+                        <h6 id="date"></h6>
+                        <p class="card-text" id="spaceSnippet"></p>
+                        <a href="https://apod.nasa.gov/apod/archivepix.html" class="btn btn-primary">Archives</a>
                     </div>
                 </div>
             </div>
             <!-- column 2 with the pic -->
             <div class="col">
                 <div class="card" style="width: 100%;">
-                    <img src="..." class="card-img-top" alt="..." id="spacePic">
+                    <img src="" class="card-img-top" alt="..." id="spacePic">
+                    <video width="320" height="240" controls>
+                        <source src="" type="video/mp4">
+                      </video>
                     <div class="card-body">
-                        <p class="card-text">here will go a pic relating to the random subject</p>
+                        <p class="card-text"></p>
+                        <p id="copyright"></p>
                     </div>
                 </div>
             </div>
@@ -111,7 +119,8 @@
 <button id="submit" onclick="logIn();" >click me</div>
 
     <!--Javascript link-->
-
+    
     <script src="main.js"></script>
+    <script src="logic.js"></script>
 </body>
 </html>
