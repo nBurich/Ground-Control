@@ -22,24 +22,39 @@ $("#submit").on("click", function (event) {
 
     var name = $("#name-input").val().trim();
     var email = $("#email-input").val().trim();
+    var favorite = $("#favorite-input").val().trim();
     console.log(name);
     console.log(email);
+    console.log(favorite);
     
 
     database.ref().push({
         name: name,
-        email: email
+        email: email,
+        favorite: favorite,
     });
 
     console.log(database);
 
-    database.ref().on("value", function(snapshot){
-        $("#name-input").text(snapshot.val().name);
-        $("#email-input").text(snapshot.val().email);
-      })
+
 
     //clear those fields
+   
+   
+   
+   
     $("#name-input").val("");
     $("#email-input").val("");
+    $("#favorite-input").val("");
+});
+
+database.ref().on("child_added", function(snapshot){
+    var sv = snapshot.val();
+    var tr = `<tr>
+    <td>${sv.name}</td>
+    <td>${sv.favorite}</td>
+</tr>`
+$("#tableBody").append(tr);
+
 });
 
