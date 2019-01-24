@@ -33,16 +33,9 @@ $("#submit").on("click", function (event) {
         email: email,
         favorite: favorite,
     });
-
+    
     console.log(database);
-
-
-
     //clear those fields
-   
-   
-   
-   
     $("#name-input").val("");
     $("#email-input").val("");
     $("#favorite-input").val("");
