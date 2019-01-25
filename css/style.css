@@ -5,7 +5,14 @@
     margin-bottom: 20px;
 }
 
-body {
+/* body {
     background-image: url(../images/galaxy.jpg);
     background-repeat: round;
+} */
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #000;
 }
