@@ -32,3 +32,16 @@ $.ajax({
 
   }
 });
+
+var AsteroidsKey = "Df4clu5wZ3LpKIR45I2ZIcl3wuX9P6yOUSeCDXgn";
+
+var roidURL = "https://api.nasa.gov/neo/rest/v1/feed?start_date=2019-02-01&end_date=2019-02-07&api_key=" + AsteroidsKey;
+
+$.ajax({
+  url: roidURL,
+  method: "GET",
+})
+  .then(function (response) {
+    console.log(response);
+
+  });

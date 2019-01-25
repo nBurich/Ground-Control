@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ground Control</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
 </head>
+
 <body class="body-particles">
     <div id="particles-js">
         <canvas class="particles-js-canvas-el" width="1065" height="942" style="width: 100%; height: 100%;"></canvas>
     </div>
        
+
     <div class="jumbotron jumbotron-fluid">
             
 
@@ -25,38 +31,41 @@
         </div>
 </div> 
     <!-- modal for user guest book -->
-    <div class="modal fade" id="guestbookModal" tabindex="-1" role="dialog" aria-labelledby="guestbookModalLabel" aria-hidden="true">
+    <div class="modal fade" id="guestbookModal" tabindex="-1" role="dialog" aria-labelledby="guestbookModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="guestbookModalLabel">Guest Book Registry</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="name" class="col-form-label">Name:</label>
-                  <input type="text" class="form-control" id="name-input">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="guestbookModalLabel">Guest Book Registry</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="form-group">
-                  <label for="email" class="col-form-label">Email:</label>
-                  <input type="text" class="form-control" id="email-input">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="col-form-label">Name:</label>
+                            <input type="text" class="form-control" id="name-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="text" class="form-control" id="email-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="favorit" class="col-form-label">What's your favorite thing about space?:</label>
+                            <input type="text" class="form-control" id="favorite-input">
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="favorit" class="col-form-label">What's your favorite thing about space?:</label>
-                    <input type="text" class="form-control" id="favorite-input">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="submit" data-dismiss="modal">Submit</button>
                 </div>
-              </form>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" id="submit" data-dismiss="modal">Submit</button>
-            </div>
-          </div>
         </div>
+
     </div> 
+
     <!-- container with main content -->
     <div class="container">
         <div class="card">
@@ -65,21 +74,22 @@
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
-                <p>Every one of us is, in the cosmic perspective, precious. If a human disagrees with you, let him live. In a hundred billion galaxies, you will not find another.</p>
-                <footer class="blockquote-footer">Carl Sagan <cite title="Source Title">Cosmos</cite></footer>
+                    <p>Every one of us is, in the cosmic perspective, precious. If a human disagrees with you, let him
+                        live. In a hundred billion galaxies, you will not find another.</p>
+                    <footer class="blockquote-footer">Carl Sagan <cite title="Source Title">Cosmos</cite></footer>
                 </blockquote>
             </div>
         </div>
         <br>
         <!-- first row with synopsis of random subject and pic relating to that subject -->
-        <div class="row">
+        <div class="row ">
             <!-- column 1 with title and synopsis -->
             <div class="col">
-                <div class="card" style="width: 100%;">
+                <div class="card" style="width: 100%; height: 100%;">
                     <div class="card-body">
                         <h2>NASA Image of the Day!</h2>
                         <br>
-                        <h5 id= "title" class="card-title"></h5>
+                        <h5 id="title" class="card-title"></h5>
                         <h6 id="date"></h6>
                         <p class="card-text" id="spaceSnippet"></p>
                         <a href="https://apod.nasa.gov/apod/archivepix.html" class="btn btn-primary">Archives</a>
@@ -88,11 +98,11 @@
             </div>
             <!-- column 2 with the pic -->
             <div class="col">
-                <div class="card" style="width: 100%;">
+                <div class="card" style="width: 100%; height: 100%;">
                     <img src="" class="card-img-top" alt="..." id="spacePic">
                     <video width="320" height="240" controls>
                         <source src="" type="video/mp4">
-                      </video>
+                    </video>
                     <div class="card-body">
                         <p class="card-text"></p>
                         <p id="copyright"></p>
@@ -100,47 +110,51 @@
                 </div>
             </div>
         </div>
+
+
         <br>
         <!-- second row with the youtube video and guest book -->
         <divs class="row">
-            <div class="col" >
-                <div class="card">
+            <div class="col">
+                <div class="card" style="width: 100%; height: 100%;">
                     <div class="card-body" id="youtubeVid">
                         <h2>Live from Nasa</h2>
-                        <iframe width="550" height="295" src="https://www.youtube.com/embed/21X5lGlDOfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="550" height="295" src="https://www.youtube.com/embed/21X5lGlDOfg" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card" style="width: 100%; height: 100%;">
                     <div class="card-body">
-                      <h5 class="card-title">Guests</h5>
-                      <table class="table">
-                        <thead>
-                            <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Favorite Thing!</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tableBody">
-                        </tbody>
-                    </table>              
+                        <h5 class="card-title">Guests</h5>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Favorite Thing!</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
 
             </div>
-        </div> 
-        <button class="btn btn-danger" id="submit" onclick="logIn();" >DON'T CLICK!!</div>
     </div>
-    <!-- Footer -->
-  
-   
 
 
-<!--Firebase Reference-->
-<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <button class="btn btn-danger" id="submit" onclick="logIn();">DON'T CLICK!!</div>
+        </div>
 
-<!-- testing onclick-->
+
+        <!-- Footer -->
+
+
+        <!--Firebase Reference-->
+ <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
 
     <!--Javascript link-->
     
@@ -150,5 +164,11 @@
 <!-- Particles.js Link -->
     <script type= "text/javascript" src= "particles.js"></script>
     <script type= "text/javascript" src= "app.js"></script>
+
+
+       
+
+
 </body>
+
 </html>

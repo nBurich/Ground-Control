@@ -8,6 +8,7 @@
  body {
     background-image: url(../images/galaxy.jpg);
     background-repeat: round;
+
 } 
 
 /* .body-particles {  
@@ -37,3 +38,6 @@ canvas {
     background-position: 50% 50%;
     background-repeat: no-repeat;
   } */
+
+
+
