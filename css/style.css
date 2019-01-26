@@ -22,9 +22,9 @@ canvas {
 
 .asteroid {
     color: white;
-
 }
 
-.spacekittybkg {
-    background-image: url(../images/spacekitty.jpg);
+
+th,td,#date,#distance {
+    text-align: left;
 }
