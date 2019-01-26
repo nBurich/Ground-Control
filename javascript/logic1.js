@@ -51,42 +51,42 @@ $.ajax({
 
 
         $('#roid').append(
-            ' <tr><td>' + name +
+            '<tr><td>' + name +
             '<td><td>' + miles +
             '<td><td>' + hazardous +
-            '<tdr><td>' + close +
+            '<td><td>' + close +
             '<td><td>' + missed + '<td><tr>'
         );
 
         $('#roid').append(
             '<tr><td>' + name2 +
             '<td><td>' + miles2 +
-            '<td><td>' + hazardous +
+            '<td><td>' + hazardous2 +
             '<td><td>' + close2 +
             '<td><td>' + missed2 + '<td><tr>'
         );
 
         $('#roid').append(
-            ' <tr><td>' + name3 +
+            '<tr><td>' + name3 +
             '<td><td>' + miles3 +
             '<td><td>' + hazardous3 +
-            '<tdr><td>' + close3 +
+            '<td><td>' + close3 +
             '<td><td>' + missed3 + '<td><tr>'
         );
 
         $('#roid').append(
-            ' <tr><td>' + name4 +
+            '<tr><td>' + name4 +
             '<td><td>' + miles4 +
             '<td><td>' + hazardous4 +
-            '<tdr><td>' + close4 +
+            '<td><td>' + close4 +
             '<td><td>' + missed4 + '<td><tr>'
         );
         
         $('#roid').append(
-            ' <tr><td>' + name5 +
+            '<tr><td>' + name5 +
             '<td><td>' + miles5 +
             '<td><td>' + hazardous5 +
-            '<tdr><td>' + close5 +
+            '<td><td>' + close5 +
             '<td><td>' + missed5 + '<td><tr>'
         );
     });
