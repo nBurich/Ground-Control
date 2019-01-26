@@ -188,12 +188,12 @@
 
     <!-- Don't click button with the space kitty modal -->
 
-    <a class="btn btn-danger" role="button" data-toggle="modal" data-target="#dontClick">DON'T CLICK!!</a>
-
+    <!-- <a class="btn btn-danger" role="button" data-toggle="modal" data-target="#dontClick" .disabled>DON'T CLICK!!</a> -->
+    <a href="#" class="btn btn-danger btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">DON'T CLICK!!</a>
     <div class="modal fade" id="dontClick" tabindex="-1" role="dialog" aria-labelledby="dontClickLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-body">
+                <div class="modal-body" class="spacekittybkg">
                     <img src="images/spacekitty.jpg" class="img-responsive" style="height: 100%; width: 100%;">
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
