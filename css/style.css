@@ -22,5 +22,8 @@ canvas {
 
 .asteroid {
     color: white;
+}
 
+th,td,#date,#distance {
+    text-align: left;
 }
