@@ -1,4 +1,4 @@
-var NasaKey = "Df4clu5wZ3LpKIR45I2ZIcl3wuX9P6yOUSeCDXgn";
+var NasaKey = "wj9hvwYYtFlmCasOmxYTcSuODrRKDDfBf2AAEqD7";
 
 var queryURL = "https://api.nasa.gov/planetary/apod?api_key=" + NasaKey;
 
@@ -46,8 +46,8 @@ $.ajax({
 
     for (i = 0; i < response; i++) {
       +-
-      +
-    }
+      
+    
     var day1 = "2019-02-01"
     console.log(response.near_earth_objects[day1][0].name);
     console.log(response.near_earth_objects[day1][0].estimated_diameter.miles.estimated_diameter_max);
@@ -68,4 +68,4 @@ $("#all-display").append(
    ' </td><td>' + hazardous +
    ' </td><td>' + close +
    ' </td><td>' + missed + ' </td></tr>');
-  });
+}})
