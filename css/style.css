@@ -24,3 +24,7 @@ canvas {
     color: white;
 
 }
+
+.spacekittybkg {
+    background-image: url(../images/spacekitty.jpg);
+}
