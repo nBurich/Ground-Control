@@ -19,17 +19,17 @@
     <div id="particles-js">
         <canvas class="particles-js-canvas-el" width="1065" height="942" style="width: 100%; height: 100%;"></canvas>
     </div>
-       
+
 
     <div class="jumbotron jumbotron-fluid">
-            
+
 
         <div class="container">
             <h1 class="display-4">This is our Galaxy</h1>
             <p class="lead">This is ground control to Major Tom!</p>
             <a class="btn btn-primary" role="button" data-toggle="modal" data-target="#guestbookModal">Guest Book</a>
         </div>
-</div> 
+    </div>
     <!-- modal for user guest book -->
     <div class="modal fade" id="guestbookModal" tabindex="-1" role="dialog" aria-labelledby="guestbookModalLabel"
         aria-hidden="true">
@@ -64,7 +64,7 @@
             </div>
         </div>
 
-    </div> 
+    </div>
 
     <!-- container with main content -->
     <div class="container">
@@ -115,29 +115,29 @@
         <br>
         <!-- This is the Asteroids API -->
         <div class="row">
-            <div class= "col">
-                <h2 class= "asteroid">Asteroids Coming Soon!</h2>
+            <div class="col">
+                <h2 class="asteroid">Asteroids Coming Soon!</h2>
             </div>
 
         </div>
         <div class="row">
-            <div class="col" >
+            <div class="col">
                 <div>
-                            <table class="table table-striped table-dark">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Estimated Diameter (miles)</th>
-                                        <th scope="col">Hazardous?</th>
-                                        <th scope="col">Close Approach Date</th>
-                                        <th scope="col">Miss Distance</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody id="all-display"></tbody>
-                                  </table>
-                
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Estimated Diameter (miles)</th>
+                                <th scope="col">Hazardous?</th>
+                                <th scope="col">Close Approach Date</th>
+                                <th scope="col">Miss Distance</th>
+                            </tr>
+                        </thead>
+                        <tbody id="all-display"></tbody>
+                    </table>
+
                 </div>
-                
+
             </div>
 
         </div>
@@ -175,27 +175,41 @@
     </div>
 
 
-    <button class="btn btn-danger" id="submit" onclick="logIn();">DON'T CLICK!!</div>
-        </div>
+    <a class="btn btn-danger" role="button" data-toggle="modal" data-target="#dontClick">DON'T CLICK!!</a>
+
+<div class="modal fade" id="dontClick" tabindex="-1" role="dialog" aria-labelledby="dontClickLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="images/spacekitty.jpg" class="img-responsive" style="height: 100%; width: 100%;">
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+          </div>
+</div>
 
 
         <!-- Footer -->
 
 
         <!--Firebase Reference-->
- <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
 
-    <!--Javascript link-->
-    
-    <script src="main.js"></script>
-    <script src="logic.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<!-- Particles.js Link -->
-    <script type= "text/javascript" src= "particles.js"></script>
-    <script type= "text/javascript" src= "app.js"></script>
+        <!--Javascript link-->
+
+        <script src="main.js"></script>
+        <script src="logic.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+        <!-- Particles.js Link -->
+        <script type="text/javascript" src="particles.js"></script>
+        <script type="text/javascript" src="app.js"></script>
 
 
-       
+
 
 
 </body>
