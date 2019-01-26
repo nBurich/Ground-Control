@@ -20,7 +20,7 @@ canvas {
     position: absolute;
 }
 
-#asteroid {
+.asteroid {
     color: white;
 
 }

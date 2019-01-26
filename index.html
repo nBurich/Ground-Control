@@ -20,17 +20,16 @@
         <canvas class="particles-js-canvas-el" width="1065" height="942" style="width: 100%; height: 100%;"></canvas>
     </div>
 
-
     <div class="jumbotron jumbotron-fluid">
-
-
         <div class="container">
             <h1 class="display-4">This is our Galaxy</h1>
             <p class="lead">This is ground control to Major Tom!</p>
             <a class="btn btn-primary" role="button" data-toggle="modal" data-target="#guestbookModal">Guest Book</a>
         </div>
     </div>
+
     <!-- modal for user guest book -->
+
     <div class="modal fade" id="guestbookModal" tabindex="-1" role="dialog" aria-labelledby="guestbookModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -67,6 +66,7 @@
     </div>
 
     <!-- container with main content -->
+
     <div class="container">
         <div class="card">
             <div class="card-header">
@@ -80,10 +80,15 @@
                 </blockquote>
             </div>
         </div>
+
         <br>
+
         <!-- first row with synopsis of random subject and pic relating to that subject -->
+
         <div class="row ">
+
             <!-- column 1 with title and synopsis -->
+
             <div class="col">
                 <div class="card" style="width: 100%; height: 100%;">
                     <div class="card-body">
@@ -96,7 +101,9 @@
                     </div>
                 </div>
             </div>
+
             <!-- column 2 with the pic -->
+
             <div class="col">
                 <div class="card" style="width: 100%; height: 100%;">
                     <img src="" class="card-img-top" alt="..." id="spacePic">
@@ -111,15 +118,16 @@
             </div>
         </div>
 
-
         <br>
+
         <!-- This is the Asteroids API -->
+
         <div class="row">
             <div class="col">
                 <h2 class="asteroid">Asteroids Coming Soon!</h2>
             </div>
-
         </div>
+
         <div class="row">
             <div class="col">
                 <div>
@@ -135,14 +143,14 @@
                         </thead>
                         <tbody id="all-display"></tbody>
                     </table>
-
                 </div>
-
             </div>
-
         </div>
+
         <br>
+
         <!-- second row with the youtube video and guest book -->
+
         <divs class="row">
             <div class="col">
                 <div class="card" style="width: 100%; height: 100%;">
@@ -174,11 +182,11 @@
             </div>
     </div>
 
+    <!-- Don't click button with the space kitty modal -->
 
     <a class="btn btn-danger" role="button" data-toggle="modal" data-target="#dontClick">DON'T CLICK!!</a>
 
-<div class="modal fade" id="dontClick" tabindex="-1" role="dialog" aria-labelledby="dontClickLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="dontClick" tabindex="-1" role="dialog" aria-labelledby="dontClickLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
@@ -188,29 +196,24 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-          </div>
-</div>
+        </div>
+    </div>
 
+    <!--Firebase Reference-->
 
-        <!-- Footer -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
 
+    <!--Javascript link-->
 
-        <!--Firebase Reference-->
-        <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script src="main.js"></script>
+    <script src="logic.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 
-        <!--Javascript link-->
-
-        <script src="main.js"></script>
-        <script src="logic.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous"></script>
-        <!-- Particles.js Link -->
-        <script type="text/javascript" src="particles.js"></script>
-        <script type="text/javascript" src="app.js"></script>
-
-
-
-
+    <!-- Particles.js Link -->
+    
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 
 </body>
 
